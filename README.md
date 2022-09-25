@@ -5,9 +5,9 @@ Simple sniffer to enumarate target fresh url list , Domain names using otx API f
 1. sudo apt-get install jq
 
 # Get Started
-git clone https://github.com/AuxGrep/URL__sniffer
-python3 URL__sniffer.py
+1. git clone https://github.com/AuxGrep/URL__sniffer
+2. python3 URL__sniffer.py
 
-# Challanges?
+# Failed to install ?
 mranonymoustz@tutanota.com
-@Written bY AuxGrep
+
