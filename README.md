@@ -8,7 +8,7 @@ Simple sniffer to enumarate target fresh url list , Domain names using otx API f
 
 # Get Started
 1. git clone https://github.com/AuxGrep/URL__sniffer
-2. python3 URL__sniffer.py
+2. python3 URL__sniffer.py <target.com>
 
 # Failed to install ?
 mranonymoustz@tutanota.com
