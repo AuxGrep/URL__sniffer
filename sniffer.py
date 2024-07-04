@@ -7,6 +7,29 @@ import urllib.request as connection
 import sys
 import subprocess
 
+# For Jq in windows
+def jq_path(os_=['Windows', 'Win32']):
+    if platform.system() in os_:
+        def is_in_path(executable_name):
+            for path in os.environ['PATH'].split(os.pathsep):
+                if os.path.isfile(os.path.join(path, executable_name)):
+                    return True
+            return False
+        
+        def add_to_path(executable_path):
+            executable_name = os.path.basename(executable_path)
+            if is_in_path(executable_name):
+                pass
+            else:
+                current_path = os.environ['PATH']
+                new_path = f"{executable_path};{current_path}"
+                os.environ['PATH'] = new_path
+                subprocess.run(f'setx PATH "{new_path}"', shell=True)
+                pass
+        executable_path = r"jq.exe"
+        add_to_path(executable_path)
+jq_path()
+
 # GUI Application Class
 class NetworkSnifferApp:
     def __init__(self, root):
@@ -134,6 +157,7 @@ class NetworkSnifferApp:
 
 # Main Function to Run the Application
 def main():
+
     root = tk.Tk()
     app = NetworkSnifferApp(root) #OG
     root.mainloop()
