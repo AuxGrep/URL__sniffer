@@ -1,14 +1,16 @@
-![alt text](https://cdn.discordapp.com/attachments/951192813477965856/1023516512537022515/Screenshot_from_2022-09-25_11-35-32.png)
+![image](https://github.com/AuxGrep/URL__sniffer/assets/103135612/9460fdee-ddac-480d-b772-446436e22925)
 
 # URL__sniffer
-Simple sniffer to enumarate target fresh url list , Domain names using otx API for bug bounty Jobs
+Simple sniffer to enumarate target fresh url list , Domain names for bug bounty Jobs
 
 # install
 1. sudo apt-get install jq
+2. apt-get install python3-tk
 
 # Get Started
 1. git clone https://github.com/AuxGrep/URL__sniffer
-2. python3 URL__sniffer.py <target.com>
+2. [LINUX] => sudo python3 sniffer.py
+3. [WINDOWS] => Download Install the setup from package release here 
 
 # Failed to install ?
 mranonymoustz@tutanota.com
